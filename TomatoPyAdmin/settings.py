@@ -58,11 +58,11 @@ WSGI_APPLICATION = 'TomatoPyAdmin.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
         'NAME': 'replicator',
-        'USER': 'root',
-        'PASSWORD': None,
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'USER': 'xbmc',
+        'PASSWORD': 'xbmc',
+        'HOST': '192.168.0.11',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
         'OPTIONS': {
           'autocommit': True,
